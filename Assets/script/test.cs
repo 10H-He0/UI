@@ -55,7 +55,7 @@ public class test : MonoBehaviour,IPointerDownHandler,IDragHandler,IPointerUpHan
         {
             transform.localScale += Vector3.one * 0.1f;
         }
-        else if (Input.GetAxis("Mouse ScrollWheel") < 0)
+        else if (Input.GetAxis("Mouse ScrollWheel") < 0 && transform.localScale.x > 0.2f)
         {
             transform.localScale += Vector3.one * -0.1f;
         }

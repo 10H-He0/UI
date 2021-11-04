@@ -17,6 +17,12 @@ public class UI : MonoBehaviour
 
     public GameObject i_bar;
     public GameObject io;
+
+    public GameObject sel_cir;
+    public GameObject sel_cir_roll;
+
+    public GameObject pic;
+    public GameObject butto;
     // Start is called before the first frame update
     void Start()
     {
@@ -68,5 +74,25 @@ public class UI : MonoBehaviour
         i_bar.SetActive(true);
         obj.GetComponent<test>().enabled = true;
         io.SetActive(true);
+    }
+
+    public void act_sel_ci()
+    {
+        if (sel_cir.activeInHierarchy)
+            sel_cir.SetActive(false);
+        else sel_cir.SetActive(true);
+        if (sel_cir_roll.activeInHierarchy)
+            sel_cir_roll.SetActive(false);
+        else sel_cir_roll.SetActive(true);
+    }
+
+    public void act_sel_pic()
+    {
+        if (pic.activeInHierarchy)
+            pic.SetActive(false);
+        else pic.SetActive(true);
+        if (butto.activeInHierarchy)
+            butto.SetActive(false);
+        else butto.SetActive(true);
     }
 }
