@@ -10,7 +10,7 @@ public class input : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        inputtext.GetComponent<InputField>().text = "input";
+        inputtext.GetComponent<InputField>().text = "可以输入了哟~";
     }
 
     // Update is called once per frame

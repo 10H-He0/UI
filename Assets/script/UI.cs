@@ -16,6 +16,7 @@ public class UI : MonoBehaviour
     public GameObject img_bar;
 
     public GameObject i_bar;
+    public GameObject io;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +39,8 @@ public class UI : MonoBehaviour
         else butt.SetActive(true);
         if (i_bar.activeInHierarchy)
             i_bar.SetActive(false);
+        if (io.activeInHierarchy)
+            io.SetActive(false);
     }
 
     public void act_tex()
@@ -64,5 +67,6 @@ public class UI : MonoBehaviour
     {
         i_bar.SetActive(true);
         obj.GetComponent<test>().enabled = true;
+        io.SetActive(true);
     }
 }
